@@ -1,14 +1,24 @@
 package com.teambeme.bemeroid
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
+import com.teambeme.bemeroid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    // 클래스의 private 변수로 선언
+    // 지연 초기화(선언 당시에는 초기화를 못해)
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        Log.d("제목", "${2+4}")
+
+    }
+
+    // 코틀린에서 상수 저장 컨벤션
+    companion object {
+        const val ID = "l2hyunwoo"
+        const val PASSWORD = "1234qwer"
     }
 }
