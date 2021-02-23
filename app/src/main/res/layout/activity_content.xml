@@ -6,4 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ContentActivity">
 
+    <TextView
+        android:id="@+id/txt_contents_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환영합니다 Content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="안녕하세요"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
