@@ -4,18 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContentActivity">
+    tools:context=".view.ContentActivity">
 
     <TextView
         android:id="@+id/txt_contents_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="환영합니다 Content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="안녕하세요"/>
+        tools:text="안녕하세요" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_project_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_contents_id"
+        tools:listitem="@layout/item_project_info" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

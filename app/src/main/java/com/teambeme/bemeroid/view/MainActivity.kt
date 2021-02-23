@@ -1,8 +1,7 @@
-package com.teambeme.bemeroid
+package com.teambeme.bemeroid.view
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.teambeme.bemeroid.databinding.ActivityMainBinding
