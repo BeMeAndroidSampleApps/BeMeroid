@@ -38,6 +38,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/teambeme/bemeroid/data/singleton/RetrofitObject.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/teambeme/bemeroid/model/ProjectData.kt">
           <value>
             <set />
